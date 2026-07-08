@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Motion & Design Portfolio</title>
+<style>
+  :root {
+    --bg: #121212;
+    --panel: #1a1a1a;
+    --text: #ededed;
+    --muted: #9a9a9a;
+    --accent: #5ec8d8;
+    --rule: #2a2a2a;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    padding: 80px 24px 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  header h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+
+  header p {
+    color: var(--muted);
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .project {
+    padding: 64px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .project:last-child {
+    border-bottom: none;
+  }
+
+  .project-number {
+    color: var(--accent);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .project h2 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin: 0 0 24px;
+  }
+
+  .project h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 40px 0 16px;
+  }
+
+  .brief {
+    background: var(--panel);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 8px;
+  }
+
+  .brief p { margin: 0 0 10px; }
+  .brief p:last-child { margin-bottom: 0; }
+  .brief strong { color: var(--accent); }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .gallery img, .storyboard img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    background: var(--panel);
+  }
+
+  .storyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .storyboard figure {
+    margin: 0;
+  }
+
+  .storyboard figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  video {
+    width: 100%;
+    border-radius: 8px;
+    background: #000;
+    display: block;
+  }
+
+  .process p {
+    color: #d0d0d0;
+    max-width: 70ch;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 24px 80px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 560px) {
+    .storyboard {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Your Name</h1>
+  <p>Motion &amp; Design Portfolio — Workflow and You, [Course Name]</p>
+</header>
+
+<main>
+
+  <!-- ============ PROJECT 1 ============ -->
+  <section class="project">
+    <div class="project-number">Project 01</div>
+    <h2>FRACTURE</h2>
+
+    <h3>Creative Brief</h3>
+    <div class="brief">
+      <p><strong>Goal:</strong> Deliver a short, high-energy brand identity animation.</p>
+      <p><strong>Concept:</strong> A 10-second logo animation for a fictional brand. A solid polygon fractures into three wedge fragments that pull apart and drift, then reverse and converge back toward center, interlocking into a single complete polygon at the moment of impact — becoming whole again. A glow and shockwave mark that moment of reassembly, then the brand name and tagline are revealed.</p>
+      <p><strong>Possible applications:</strong> Brand intro/outro bumper, title sequence, social media brand reveal, app splash screen.</p>
+    </div>
+
+    <h3>Storyboard</h3>
+    <div class="storyboard">
+      <figure>
+        <img src="storyboards/fracture_storyboard.jpg" alt="Storyboard frame 1">
+        <figcaption>storyboard</figcaption>
+      </figure>
+    </div>
+
+    <h3>Final Animation</h3>
+    <video controls>
+      <source src="videos/fracture.mp4" type="video/mp4">
+      Your browser doesn't support embedded video.
+    </video>
+
+    <h3>Process</h3>
+    <div class="process">
+      <p>I built the assets in Illustrator (three wedge fragments, the shockwave, and the wordmark) and animated everything in After Effects. I went with a fracture-and-reassemble concept because it gives the piece a clear payoff — three pieces that complete each other rather than shapes just moving around on screen. Splitting the polygon into three wedges meant each fragment needed its own independent position and rotation animation to sell the drift-apart, and all three had to land back in exact alignment on the same frame or the reassembly wouldn't read as a single whole shape again. The glow and shockwave at the moment of impact was built to reinforce that payoff rather than sit on top as a separate effect. For the wordmark reveal, I used a track matte wipe instead of a simple fade, so the reveal feels triggered by the impact itself rather than happening on its own timer.</p>
+    </div>
+  </section>
+
+  <!-- ============ PROJECT 2 ============ -->
+  <section class="project">
+    <div class="project-number">Project 02</div>
+    <h2>CHARGE</h2>
+
+    <h3>Creative Brief</h3>
+    <div class="brief">
+      <p><strong>Goal:</strong> Deliver a short, high-energy brand identity animation.</p>
+      <p><strong>Concept:</strong> A 5-second logo animation for a fictional energy/performance brand. Two halves of a lightning bolt converge from opposite sides of the frame and interlock into a single complete bolt at the moment of impact, triggering a glowing core and the reveal of the CHARGE wordmark.</p>
+      <p><strong>Possible applications:</strong> Energy drink or performance brand sting, esports/stream intro, product launch teaser, app splash screen.</p>
+    </div>
+
+    <h3>Storyboard</h3>
+    <div class="storyboard">
+      <figure>
+        <img src="storyboards/charge_storyboard.jpg" alt="Storyboard for charge">
+        <figcaption>Storyboard</figcaption>
+      </figure>
+    </div>
+
+    <h3>Final Animation</h3>
+    <video controls>
+      <source src="videos/logo.mp4" type="video/mp4">
+      Your browser doesn't support embedded video.
+    </video>
+
+    <h3>Process</h3>
+    <div class="process">
+      <p>I built the logo assets in Illustrator (two bolt halves and a glowing core) and animated the piece in After Effects. I went with the lightning bolt concept for the same reason as FRACTURE — it gives the animation a clear payoff, two pieces that complete each other rather than shapes just moving around on screen. Splitting the bolt into two halves meant each half needed its own independent position and rotation animation to sell the idea that they're racing toward each other from opposite sides, and both had to land in exact alignment at the same moment or the bolt wouldn't read correctly. The glowing, pulsing core at the point of impact adds to the sense of energy and momentum. As with FRACTURE, I used a track matte wipe for the wordmark reveal instead of a simple fade, which keeps the whole build feeling triggered by the impact rather than running on its own separate timer.</p>
+    </div>
+  </section>
+
+  <!-- ============ PROJECT 3 ============ -->
+  <section class="project">
+    <div class="project-number">Project 03</div>
+    <h2>Found a Fish</h2>
+
+    <h3>Creative Brief</h3>
+    <div class="brief">
+      <p><strong>Goal:</strong> Create a short animated sequence in Adobe After Effects demonstrating transform controls, masking techniques, and basic animation principles.</p>
+      <p><strong>Concept:</strong> The animation depicts a submarine diving from the surface of the ocean into the deep sea. The submarine begins floating calmly at the surface, then tilts downward and descends. A track matte wipe transition marks the shift from the bright surface water to the dark, deep ocean environment. Once submerged, the submarine's headlight switches on and seaweed appears to give a sense of depth and forward movement, before the submarine stops and finds a fish. The animation then eases into a fade to black.</p>
+      <p><strong>Possible applications:</strong> Educational/explainer intro, children's media title sequence, exhibit or aquarium display loop, animation-fundamentals demo reel piece.</p>
+    </div>
+
+    <h3>Storyboard</h3>
+    <div class="storyboard">
+      <figure>
+        <img src="storyboards/found_a_fish_storyboard.jpg" alt="Storyboard for found-a-fish">
+        <figcaption>Storyboard</figcaption>
+      </figure>
+    </div>
+
+    <h3>Final Animation</h3>
+    <video controls>
+      <source src="videos/found-a-fish.mp4" type="video/mp4">
+      Your browser doesn't support embedded video.
+    </video>
+
+    <h3>Process</h3>
+    <div class="process">
+      <p>I built the scene from three Illustrator files — the submarine as separate layered parts (body, tower, periscope, fin, portholes, headlight), a bright "above" layer (sun, light water, ripples), and a dark "below" layer (dark water, seaweed, fish, headlight glow) — then animated all of it in After Effects. I chose an underwater dive concept because it gives a clear visual narrative with a natural beginning, middle, and end, while giving me a reason to apply a wide range of transform types across several independent elements. The descent, paired with the shift from light to dark water, builds a sense of depth and passing time, and the track matte wipe gives that transition a deliberate, visible moment instead of a simple crossfade. Turning the headlight on once the submarine is submerged ties the lighting change directly to the story beat rather than treating it as just a technical effect.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Built for Workflow and You — [Course Name], [Semester Year]
+</footer>
+
+</body>
+</html>
