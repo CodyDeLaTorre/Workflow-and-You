@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Motion & Design Portfolio</title>
+<title>Cody De La Torre — Motion & Design Portfolio</title>
 <style>
   :root {
     --bg: #121212;
@@ -95,7 +95,7 @@
     gap: 12px;
   }
 
-  .gallery img, .storyboard img {
+  .gallery img {
     width: 100%;
     height: auto;
     display: block;
@@ -105,12 +105,20 @@
 
   .storyboard {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 
   .storyboard figure {
     margin: 0;
+  }
+
+  .storyboard img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    background: var(--panel);
   }
 
   .storyboard figcaption {
@@ -138,19 +146,13 @@
     color: var(--muted);
     font-size: 0.9rem;
   }
-
-  @media (max-width: 560px) {
-    .storyboard {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Your Name</h1>
-  <p>Motion &amp; Design Portfolio — Workflow and You, [Course Name]</p>
+  <h1>Cody De La Torre</h1>
+  <p>Motion &amp; Design Portfolio — Workflow and You, GIT 314</p>
 </header>
 
 <main>
